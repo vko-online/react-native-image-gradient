@@ -53,7 +53,7 @@ function extract (width: number, maxWidth: number, darkenWidth: number) {
   ]
 }
 
-export default ({ style, blurRadius, backgroundStyle, darkenWidth = 0, darken = 0, source, ...props }: Props) => {
+export default ({ style, blurRadius = 0, backgroundStyle, darkenWidth = 0, darken = 0, source, ...props }: Props) => {
   const [layoutWidth, setLayoutWith] = useState(Dimensions.get('window').width)
   const [imageLayoutWidth, setImageLayoutWith] = useState(1)
   if (darkenWidth && InitialLinearGradient) {
