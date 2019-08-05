@@ -13,6 +13,10 @@ React Native Image with Gradient component for iOS + Android
   />
 ```
 
+## Purpose
+
+Useful for list of cards with images that don't fit screen width or small
+
 ## Demo
 
 ![](https://github.com/vko-online/react-native-image-gradient/blob/master/demo/screen1.png?raw=true)
