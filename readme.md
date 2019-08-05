@@ -15,8 +15,8 @@ React Native Image with Gradient component for iOS + Android
 
 ## Demo
 
-![](https://raw.githubusercontent.com/vko-online/react-native-image-gradient/blob/master/demo/screen1.png)
+![](https://github.com/vko-online/react-native-image-gradient/blob/master/demo/screen1.png?raw=true)
 
 ## Inspiration
 
-![](https://raw.githubusercontent.com/vko-online/react-native-image-gradient/blob/master/demo/screen2.png)
+![](https://github.com/vko-online/react-native-image-gradient/blob/master/demo/screen2.png?raw=true)
