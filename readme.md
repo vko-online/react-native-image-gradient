@@ -7,8 +7,8 @@ React Native Image with Gradient component for iOS + Android
   import Image from './react-native-image-gradient'
   <Image
     style={{ width: 200 }}
-    darken={0.6}
-    darkenWidth={20}
+    darken={0.6} // background opacity
+    darkenWidth={20} // percentage of image black border
     source={require('./images/cat.png')}
   />
 ```
