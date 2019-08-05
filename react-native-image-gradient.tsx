@@ -53,7 +53,7 @@ function extract (width: number, maxWidth: number, darkenWidth: number) {
   ]
 }
 
-export default ({ style, blurRadius, backgroundStyle, darkenWidth = 0, darken = 0, source }: Props) => {
+export default ({ style, blurRadius, backgroundStyle, darkenWidth = 0, darken = 0, source, ...props }: Props) => {
   const [layoutWidth, setLayoutWith] = useState(Dimensions.get('window').width)
   const [imageLayoutWidth, setImageLayoutWith] = useState(1)
   if (darkenWidth && InitialLinearGradient) {
@@ -68,7 +68,9 @@ export default ({ style, blurRadius, backgroundStyle, darkenWidth = 0, darken = 
           <Image
             source={source}
             onLayout={(event) => setImageLayoutWith(event.nativeEvent.layout.width)}
-            style={[styles.image, style]} />
+            style={[styles.image, style]}
+            {...props}
+          />
         </InitialLinearGradient>
       </ImageBackground>
     )
@@ -76,7 +78,7 @@ export default ({ style, blurRadius, backgroundStyle, darkenWidth = 0, darken = 
   return (
     <ImageBackground source={source} style={[styles.background, backgroundStyle]} resizeMode='cover' blurRadius={blurRadius}>
       <View style={[styles.view, { backgroundColor: `rgba(0,0,0,${darken})` }]}>
-        <Image source={source} style={[styles.image, style]} />
+        <Image source={source} style={[styles.image, style]} {...props} />
       </View>
     </ImageBackground>
   )
