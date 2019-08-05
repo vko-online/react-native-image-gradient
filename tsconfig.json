@@ -6,10 +6,6 @@
     "moduleResolution": "node",
     "noEmit": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "declaration": true,
-    "declarationDir": "./dist",
-    "module": "commonjs",
-    "outDir": "./dist"
+    "resolveJsonModule": true
   }
 }
